@@ -1,0 +1,44 @@
+public class MyClass {
+    private final int x;
+    private final int y;
+
+    public MyClass(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public int suma() {
+        return x + y;
+    }
+
+    public int resta() {
+        return x - y;
+    }
+
+    public int multiplicacion() {
+        return x * y;
+    }
+
+    public int division() {
+        return x / y;
+    }
+
+    public int modulo() {
+        return x % y;
+    }
+
+    public static void main(String[] args) {
+        int x = 10;  
+        int y = 5;   
+
+        MyClass obj = new MyClass(x, y);
+
+        System.out.println("X = " + obj.x);
+        System.out.println("Y = " + obj.y);
+        System.out.println("Suma: " + obj.suma());
+        System.out.println("Resta: " + obj.resta());
+        System.out.println("Multiplicación: " + obj.multiplicacion());
+        System.out.println("División: " + obj.division());
+        System.out.println("Módulo: " + obj.modulo());
+    }
+}
